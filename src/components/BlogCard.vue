@@ -11,8 +11,8 @@ defineProps({
 
 <template>
   <div class="blog-card">
-    <img class="blog-img" :src="blogProp.creator.picture" :alt="`A picture of ${blogProp.creator.name}`">
-    <img height="200" :src="blogProp.imgUrl">
+    <img class="profile-img" :src="blogProp.creator.picture" :alt="`A picture of ${blogProp.creator.name}`">
+    <img height="200" :src="blogProp.imgUrl" class="img-fluid">
     <label class="blog-title">{{ blogProp.title }}</label>
     <p>{{ blogProp.body }}</p>
   </div>
